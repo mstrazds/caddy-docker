@@ -21,5 +21,4 @@ WORKDIR /srv
 COPY Caddyfile /etc/Caddyfile
 COPY index.html /srv/index.html
 
-ENTRYPOINT ["/usr/bin/caddy"]
-CMD ["--conf", "/etc/Caddyfile", "--log", "stdout"]
+CMD ["/usr/bin/caddy", "--conf", "/etc/Caddyfile", "--log", "stdout"]
